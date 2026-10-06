@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7fc;
+    color: #234b5c;
+}
+
+/* Menu */
+nav {
+    background-color: #55bde3;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #164d63;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(#9ddff2, #eaf7fc);
+}
+
+header h1 {
+    color: #176b89;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Seções */
+section {
+    padding: 40px 10%;
+}
+
+section h2 {
+    color: #1782a8;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Trailer */
+.trailer {
+    text-align: center;
+}
+
+.trailer iframe {
+    width: 80%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #16799b;
+    margin: 10px 0;
+}
+
+/* Galeria */
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.galeria img {
+    width: 32%;
+    height: 250px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Curiosidades */
+#curiosidades li {
+    margin: 10px;
+}
+
+/* Formulário */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #9bd9e9;
+    border-radius: 7px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #39a9d1;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #176d8b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #21657d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+footer a:hover {
+    color: #b9edff;
+}
+
+/* Responsividade para celular */
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria {
+        flex-wrap: wrap;
+    }
+
+    .galeria img {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .trailer iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
